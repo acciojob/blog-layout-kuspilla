@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Layout</title>
+    <style>
+        /* Basic styling for the layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 0 1 calc(25% - 20px); /* 25% width with a little spacing */
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <div class="column">
+            <h2>Category 1</h2>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+                <!-- Add more articles here -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Category 2</h2>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <!-- Add more articles here -->
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Category 3</h2>
+            <ul>
+                <!-- Add articles here -->
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quibusdam?</p>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Category 4</h2>
+            <ul>
+                <!-- Add articles here -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore enim quibusdam dolore quo! Ex necessitatibus reprehenderit iure tempora omnis.</p>
+            </ul>
+        </div>
+    </div>
 </body>
-
 </html>
